@@ -9,11 +9,36 @@
       "Presentation/1.0.0": {
         "dependencies": {
           "Application": "1.0.0",
+          "AutoMapper": "14.0.0",
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
           "Infrastructure": "1.0.0",
           "Microsoft.EntityFrameworkCore.Design": "8.0.14"
         },
         "runtime": {
           "Presentation.dll": {}
+        }
+      },
+      "AutoMapper/14.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Options": "8.0.2"
+        },
+        "runtime": {
+          "lib/net8.0/AutoMapper.dll": {
+            "assemblyVersion": "14.0.0.0",
+            "fileVersion": "14.0.0.0"
+          }
+        }
+      },
+      "AutoMapper.Extensions.Microsoft.DependencyInjection/12.0.1": {
+        "dependencies": {
+          "AutoMapper": "14.0.0",
+          "Microsoft.Extensions.Options": "8.0.2"
+        },
+        "runtime": {
+          "lib/netstandard2.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.0.1.0"
+          }
         }
       },
       "Azure.Core/1.38.0": {
@@ -895,6 +920,8 @@
       },
       "Application/1.0.0": {
         "dependencies": {
+          "AutoMapper": "14.0.0",
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
           "Domain": "1.0.0"
         },
         "runtime": {
@@ -905,6 +932,10 @@
         }
       },
       "Domain/1.0.0": {
+        "dependencies": {
+          "AutoMapper": "14.0.0",
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1"
+        },
         "runtime": {
           "Domain.dll": {
             "assemblyVersion": "1.0.0.0",
@@ -915,6 +946,8 @@
       "Infrastructure/1.0.0": {
         "dependencies": {
           "Application": "1.0.0",
+          "AutoMapper": "14.0.0",
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
           "Microsoft.EntityFrameworkCore": "8.0.14",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.14"
         },
@@ -932,6 +965,20 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "AutoMapper/14.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-OC+1neAPM4oCCqQj3g2GJ2shziNNhOkxmNB9cVS8jtx4JbgmRzLcUOxB9Tsz6cVPHugdkHgCaCrTjjSI0Z5sCQ==",
+      "path": "automapper/14.0.0",
+      "hashPath": "automapper.14.0.0.nupkg.sha512"
+    },
+    "AutoMapper.Extensions.Microsoft.DependencyInjection/12.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+g/K+Vpe3gGMKGzjslMOdqNlkikScDjWfVvmWTayrDHaG/n2pPmFBMa+jKX1r/h6BDGFdkyRjAuhFE3ykW+r1g==",
+      "path": "automapper.extensions.microsoft.dependencyinjection/12.0.1",
+      "hashPath": "automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512"
     },
     "Azure.Core/1.38.0": {
       "type": "package",

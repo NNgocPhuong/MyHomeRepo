@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "D:\\HappyProject\\MyHomeCleanArchitecture\\Presentation\\wwwroot\\img\\karaokeImg.png",
+      "PackagePath": "staticwebassets\\img\\karaokeImg.png"
+    },
+    {
       "Id": "D:\\HappyProject\\MyHomeCleanArchitecture\\Presentation\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

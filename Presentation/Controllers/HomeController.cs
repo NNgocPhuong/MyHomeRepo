@@ -1,5 +1,7 @@
 using System.Diagnostics;
+using System.Threading.Tasks;
 using Application.IServices;
+using Domain.Entities;
 using Microsoft.AspNetCore.Mvc;
 using Presentation.Models;
 
@@ -15,11 +17,49 @@ public class HomeController : Controller
         _roomService = roomService;
     }
 
-    public IActionResult Index()
+    public async Task<IActionResult> Index()
+    {
+        var rooms = await _roomService.GetAllRoomsAsync();
+        var roomModels = rooms.Select(room => new Rooms
+        {
+            Id = room.Id,
+            Name = room.Name,
+            RoomType = room.RoomType,
+            PricePerHour = room.PricePerHour,
+            Status = room.Status
+        }).ToList();
+        return View(roomModels);
+    }
+
+    public IActionResult Create()
     {
         return View();
     }
 
+    [HttpPost]
+    public async Task<IActionResult> Create(Rooms room)
+    {
+        if (ModelState.IsValid)
+        {
+            var roomDto = new Rooms
+            {
+                Name = room.Name,
+                RoomType = room.RoomType,
+                PricePerHour = room.PricePerHour,
+                Status = room.Status
+            };
+            Room newRoom = new Room()
+            {
+                Name = roomDto.Name,
+                RoomType = roomDto.RoomType,
+                PricePerHour = roomDto.PricePerHour,
+                Status = roomDto.Status
+            };
+            await _roomService.AddRoomAsync(newRoom);
+            return RedirectToAction("Index");
+        }
+        return View(room);
+    }
     public IActionResult Privacy()
     {
         return View();

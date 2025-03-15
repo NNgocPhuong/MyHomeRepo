@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "iqiUIgbThZ8UcrgBXVZSxErlaYxbDU1FUd82t9RGeuk=",
+  "Hash": "FG59aSjJrVb+5HpxivP6xZ93yzMWOithD+pDRja4s1I=",
   "Source": "Presentation",
   "BasePath": "_content/Presentation",
   "Mode": "Default",
@@ -99,6 +99,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "D:\\HappyProject\\MyHomeCleanArchitecture\\Presentation\\wwwroot\\img\\karaokeImg.png",
+      "SourceId": "Presentation",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\HappyProject\\MyHomeCleanArchitecture\\Presentation\\wwwroot\\",
+      "BasePath": "_content/Presentation",
+      "RelativePath": "img/karaokeImg#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ouascp6pfd",
+      "Integrity": "EKqsc1/AXITKsesfNAbQl7yuk2ASsX68DCci4Bz3Sfk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\karaokeImg.png"
     },
     {
       "Identity": "D:\\HappyProject\\MyHomeCleanArchitecture\\Presentation\\wwwroot\\js\\site.js",
@@ -1481,6 +1502,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="
+        }
+      ]
+    },
+    {
+      "Route": "img/karaokeImg.ouascp6pfd.png",
+      "AssetFile": "D:\\HappyProject\\MyHomeCleanArchitecture\\Presentation\\wwwroot\\img\\karaokeImg.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "502330"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EKqsc1/AXITKsesfNAbQl7yuk2ASsX68DCci4Bz3Sfk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 15 Mar 2025 14:52:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ouascp6pfd"
+        },
+        {
+          "Name": "label",
+          "Value": "img/karaokeImg.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-EKqsc1/AXITKsesfNAbQl7yuk2ASsX68DCci4Bz3Sfk="
+        }
+      ]
+    },
+    {
+      "Route": "img/karaokeImg.png",
+      "AssetFile": "D:\\HappyProject\\MyHomeCleanArchitecture\\Presentation\\wwwroot\\img\\karaokeImg.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "502330"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EKqsc1/AXITKsesfNAbQl7yuk2ASsX68DCci4Bz3Sfk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 15 Mar 2025 14:52:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-EKqsc1/AXITKsesfNAbQl7yuk2ASsX68DCci4Bz3Sfk="
         }
       ]
     },

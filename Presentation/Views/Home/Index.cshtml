@@ -1,8 +1,34 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@model IEnumerable<Rooms>
+@{
+    ViewData["Title"] = "Trang chủ";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="container py-4">
+    <h3 class="mb-4">Có <b>@Model.Count()</b> phòng</h3>
+
+    <div class="row g-4">
+        @foreach (var item in Model)
+        {
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card shadow-sm border-0 rounded">
+                    <a asp-controller="Home" asp-action="Index" asp-route-id="@item.Id">
+                        <img src="~/img/karaokeImg.png" class="card-img-top" alt="Phòng hát">
+                    </a>
+                    <div class="card-body text-center">
+                        <a asp-controller="Home" asp-action="Detail" asp-route-id="@item.Id" class="text-decoration-none text-dark">
+                            <h5 class="card-title fw-bold">@item.Name</h5>
+                        </a>
+                        <p class="mb-1">Loại: <span class="fw-semibold">@item.RoomType</span></p>
+                        <p class="mb-1">Trạng thái: <span class="fw-semibold text-success">@item.Status</span></p>
+                        <p class="text-danger fw-bold">Giá thuê: @item.PricePerHour đồng</p>
+                        <a asp-controller="Home" asp-action="Detail" asp-route-id="@item.Id" class="btn btn-outline-primary w-100">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+    <div class="text-center mt-4">
+        <a asp-controller="Home" asp-action="Create" class="btn btn-success px-4 py-2">Tạo phòng</a>
+    </div>
 </div>
