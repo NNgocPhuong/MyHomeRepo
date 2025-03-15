@@ -20,6 +20,15 @@ namespace Infrastructure
             services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(connectionString));
             services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
             services.AddScoped<IRoomService, RoomService>();
+            services.AddScoped<IRoomUsageHistoryService, RoomUsageHistoryService>();
+            services.AddScoped<IMembersService, MembersService>();
+            services.AddScoped<IEmployeeUsageService, EmployeeUsageService>();
+            services.AddScoped<ICategoriesService, CategoriesService>();
+            services.AddScoped<IProductsService, ProductsService>();
+            services.AddScoped<IOrdersService, OrdersService>();
+            services.AddScoped<IOrderDetailsService, OrderDetailsService>();
+            services.AddScoped<IOrderPaymentService, OrderPaymentService>();
+
             return services;
         }
     }
