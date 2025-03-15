@@ -3,40 +3,24 @@
   "WorkspaceRootPath": "D:\\HappyProject\\MyHomeCleanArchitecture\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E53B9970-15B1-481D-8940-5ADEAABC773B}|Infrastructure\\Infrastructure.csproj|d:\\happyproject\\myhomecleanarchitecture\\infrastructure\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E53B9970-15B1-481D-8940-5ADEAABC773B}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E53B9970-15B1-481D-8940-5ADEAABC773B}|Infrastructure\\Infrastructure.csproj|d:\\happyproject\\myhomecleanarchitecture\\infrastructure\\infrastructureservicecollection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E53B9970-15B1-481D-8940-5ADEAABC773B}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\infrastructureservicecollection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DFF9AD95-1650-45B1-AD72-80D41CF3C9A7}|Presentation\\Presentation.csproj|d:\\happyproject\\myhomecleanarchitecture\\presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DFF9AD95-1650-45B1-AD72-80D41CF3C9A7}|Presentation\\Presentation.csproj|solutionrelative:presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DFF9AD95-1650-45B1-AD72-80D41CF3C9A7}|Presentation\\Presentation.csproj|d:\\happyproject\\myhomecleanarchitecture\\presentation\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{DFF9AD95-1650-45B1-AD72-80D41CF3C9A7}|Presentation\\Presentation.csproj|solutionrelative:presentation\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5993398-E9C0-41BD-B7E9-57CD17C72C33}|Domain\\Domain.csproj|d:\\happyproject\\myhomecleanarchitecture\\domain\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5993398-E9C0-41BD-B7E9-57CD17C72C33}|Domain\\Domain.csproj|solutionrelative:domain\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{09E43D65-381F-445A-9812-D157AE74C49E}|Application\\Application.csproj|d:\\happyproject\\myhomecleanarchitecture\\application\\services\\roomservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{09E43D65-381F-445A-9812-D157AE74C49E}|Application\\Application.csproj|solutionrelative:application\\services\\roomservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{09E43D65-381F-445A-9812-D157AE74C49E}|Application\\Application.csproj|d:\\happyproject\\myhomecleanarchitecture\\application\\services\\iroomservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{09E43D65-381F-445A-9812-D157AE74C49E}|Application\\Application.csproj|solutionrelative:application\\services\\iroomservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E53B9970-15B1-481D-8940-5ADEAABC773B}|Infrastructure\\Infrastructure.csproj|d:\\happyproject\\myhomecleanarchitecture\\infrastructure\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E53B9970-15B1-481D-8940-5ADEAABC773B}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A5993398-E9C0-41BD-B7E9-57CD17C72C33}|Domain\\Domain.csproj|d:\\happyproject\\myhomecleanarchitecture\\domain\\entities\\employeeusage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5993398-E9C0-41BD-B7E9-57CD17C72C33}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\employeeusage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5993398-E9C0-41BD-B7E9-57CD17C72C33}|Domain\\Domain.csproj|d:\\happyproject\\myhomecleanarchitecture\\domain\\entities\\products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5993398-E9C0-41BD-B7E9-57CD17C72C33}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A5993398-E9C0-41BD-B7E9-57CD17C72C33}|Domain\\Domain.csproj|d:\\happyproject\\myhomecleanarchitecture\\domain\\entities\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A5993398-E9C0-41BD-B7E9-57CD17C72C33}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DFF9AD95-1650-45B1-AD72-80D41CF3C9A7}|Presentation\\Presentation.csproj|d:\\happyproject\\myhomecleanarchitecture\\presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DFF9AD95-1650-45B1-AD72-80D41CF3C9A7}|Presentation\\Presentation.csproj|solutionrelative:presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -70,33 +54,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\HappyProject\\MyHomeCleanArchitecture\\Presentation\\appsettings.json",
-              "RelativeDocumentMoniker": "Presentation\\appsettings.json",
-              "ToolTip": "D:\\HappyProject\\MyHomeCleanArchitecture\\Presentation\\appsettings.json",
-              "RelativeToolTip": "Presentation\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-14T11:23:16.266Z",
+              "DocumentIndex": 2,
+              "Title": "Products.cs",
+              "DocumentMoniker": "D:\\HappyProject\\MyHomeCleanArchitecture\\Domain\\Entities\\Products.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\Products.cs",
+              "ToolTip": "D:\\HappyProject\\MyHomeCleanArchitecture\\Domain\\Entities\\Products.cs",
+              "RelativeToolTip": "Domain\\Entities\\Products.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-15T06:43:02.039Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "InfrastructureServiceCollection.cs",
-              "DocumentMoniker": "D:\\HappyProject\\MyHomeCleanArchitecture\\Infrastructure\\InfrastructureServiceCollection.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\InfrastructureServiceCollection.cs",
-              "ToolTip": "D:\\HappyProject\\MyHomeCleanArchitecture\\Infrastructure\\InfrastructureServiceCollection.cs",
-              "RelativeToolTip": "Infrastructure\\InfrastructureServiceCollection.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAARAAAAAAAAAA==",
+              "Title": "EmployeeUsage.cs",
+              "DocumentMoniker": "D:\\HappyProject\\MyHomeCleanArchitecture\\Domain\\Entities\\EmployeeUsage.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\EmployeeUsage.cs",
+              "ToolTip": "D:\\HappyProject\\MyHomeCleanArchitecture\\Domain\\Entities\\EmployeeUsage.cs",
+              "RelativeToolTip": "Domain\\Entities\\EmployeeUsage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-14T11:20:19.181Z",
+              "WhenOpened": "2025-03-15T06:41:35.23Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\HappyProject\\MyHomeCleanArchitecture\\Presentation\\Program.cs",
               "RelativeDocumentMoniker": "Presentation\\Program.cs",
@@ -104,83 +88,30 @@
               "RelativeToolTip": "Presentation\\Program.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAAAUAAABtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-14T11:18:12.39Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-14T11:18:12.39Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Repository.cs",
-              "DocumentMoniker": "D:\\HappyProject\\MyHomeCleanArchitecture\\Infrastructure\\Repositories\\Repository.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Repositories\\Repository.cs",
-              "ToolTip": "D:\\HappyProject\\MyHomeCleanArchitecture\\Infrastructure\\Repositories\\Repository.cs",
-              "RelativeToolTip": "Infrastructure\\Repositories\\Repository.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA4AAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-14T10:57:49.175Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IRepository.cs",
-              "DocumentMoniker": "D:\\HappyProject\\MyHomeCleanArchitecture\\Domain\\Interfaces\\IRepository.cs",
-              "RelativeDocumentMoniker": "Domain\\Interfaces\\IRepository.cs",
-              "ToolTip": "D:\\HappyProject\\MyHomeCleanArchitecture\\Domain\\Interfaces\\IRepository.cs",
-              "RelativeToolTip": "Domain\\Interfaces\\IRepository.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAADgvw4AAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-14T10:29:24.616Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "D:\\HappyProject\\MyHomeCleanArchitecture\\Infrastructure\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Data\\ApplicationDbContext.cs",
               "ToolTip": "D:\\HappyProject\\MyHomeCleanArchitecture\\Infrastructure\\Data\\ApplicationDbContext.cs",
               "RelativeToolTip": "Infrastructure\\Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAiwBIAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-14T10:54:59.993Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "RoomService.cs",
-              "DocumentMoniker": "D:\\HappyProject\\MyHomeCleanArchitecture\\Application\\Services\\RoomService.cs",
-              "RelativeDocumentMoniker": "Application\\Services\\RoomService.cs",
-              "ToolTip": "D:\\HappyProject\\MyHomeCleanArchitecture\\Application\\Services\\RoomService.cs",
-              "RelativeToolTip": "Application\\Services\\RoomService.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAcwCUAAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-14T10:39:21.4Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "IRoomService.cs",
-              "DocumentMoniker": "D:\\HappyProject\\MyHomeCleanArchitecture\\Application\\Services\\IRoomService.cs",
-              "RelativeDocumentMoniker": "Application\\Services\\IRoomService.cs",
-              "ToolTip": "D:\\HappyProject\\MyHomeCleanArchitecture\\Application\\Services\\IRoomService.cs",
-              "RelativeToolTip": "Application\\Services\\IRoomService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-14T10:36:15.881Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 3,
               "Title": "Room.cs",
               "DocumentMoniker": "D:\\HappyProject\\MyHomeCleanArchitecture\\Domain\\Entities\\Room.cs",
               "RelativeDocumentMoniker": "Domain\\Entities\\Room.cs",
               "ToolTip": "D:\\HappyProject\\MyHomeCleanArchitecture\\Domain\\Entities\\Room.cs",
               "RelativeToolTip": "Domain\\Entities\\Room.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-14T10:26:42.196Z",
               "EditorCaption": ""
