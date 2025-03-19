@@ -1,8 +1,8 @@
 ﻿@model IEnumerable<Rooms>
-@{
-    ViewData["Title"] = "Trang chủ";
-}
 
+@{
+    ViewData["Title"] = "Home";
+}
 <div class="container py-4">
     <h3 class="mb-4">Có <b>@Model.Count()</b> phòng</h3>
 
@@ -19,9 +19,18 @@
                             <h5 class="card-title fw-bold">@item.Name</h5>
                         </a>
                         <p class="mb-1">Loại: <span class="fw-semibold">@item.RoomType</span></p>
-                        <p class="mb-1">Trạng thái: <span class="fw-semibold text-success">@item.Status</span></p>
+                        <p class="mb-1">Trạng thái: <span class="fw-semibold text-success">@(item.Status == "Available" ? "Có sẵn" : "Đang bận")</span></p>
                         <p class="text-danger fw-bold">Giá thuê: @item.PricePerHour đồng</p>
-                        <a asp-controller="Home" asp-action="Detail" asp-route-id="@item.Id" class="btn btn-outline-primary w-100">Xem chi tiết</a>
+                        @if (item.Status == "Available")
+                        {
+                            <a href="#" class="btn btn-outline-primary w-100 btn-start-room" data-id="@item.Id">Bật phòng</a>
+
+                        }
+                        else if (item.Status == "Occupied")
+                        {
+                            <a asp-controller="Home" asp-action="Pay" asp-route-id="@item.Id" class="btn btn-outline-success w-100">Thanh toán</a>
+                        }
+                        <a asp-controller="Home" asp-action="Edit" asp-route-id="@item.Id" class="btn btn-outline-warning w-100 mt-2">Chỉnh sửa</a>
                     </div>
                 </div>
             </div>
@@ -32,3 +41,33 @@
         <a asp-controller="Home" asp-action="Create" class="btn btn-success px-4 py-2">Tạo phòng</a>
     </div>
 </div>
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".btn-start-room").click(function (e) {
+                e.preventDefault();
+                var button = $(this);
+                var roomId = button.data("id");
+
+                $.ajax({
+                    url: '@Url.Action("Start", "Home")',
+                    type: 'POST',
+                    data: { id: roomId },
+                    success: function (response) {
+                        if (response.success) {
+                            button.removeClass("btn-outline-primary").addClass("btn-outline-success").text("Thanh toán");
+                            button.attr("href", '@Url.Action("Pay", "Home")' + '/' + roomId);
+                            button.removeClass("btn-start-room").addClass("btn-pay-room");
+                        } else {
+                            alert("Có lỗi xảy ra khi bật phòng.");
+                        }
+                    },
+                    error: function () {
+                        alert("Có lỗi xảy ra khi gửi yêu cầu.");
+                    }
+                });
+            });
+        });
+    </script>
+}

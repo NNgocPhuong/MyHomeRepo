@@ -1,4 +1,4 @@
-using System.Diagnostics;
+﻿using System.Diagnostics;
 using System.Threading.Tasks;
 using Application.IServices;
 using Domain.Entities;
@@ -59,6 +59,65 @@ public class HomeController : Controller
             return RedirectToAction("Index");
         }
         return View(room);
+    }
+    public async Task<IActionResult> Edit(int id)
+    {
+        var room = await _roomService.GetRoomByIdAsync(id);
+        if (room == null)
+        {
+            return NotFound();
+        }
+        var roomModel = new Rooms
+        {
+            Id = room.Id,
+            Name = room.Name,
+            RoomType = room.RoomType,
+            PricePerHour = room.PricePerHour,
+            Status = room.Status
+        };
+        return View(roomModel);
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> Edit(Rooms room)
+    {
+        if (ModelState.IsValid)
+        {
+            var roomDto = new Rooms
+            {
+                Id = room.Id,
+                Name = room.Name,
+                RoomType = room.RoomType,
+                PricePerHour = room.PricePerHour,
+                Status = room.Status
+            };
+            Room updatedRoom = new Room()
+            {
+                Id = roomDto.Id,
+                Name = roomDto.Name,
+                RoomType = roomDto.RoomType,
+                PricePerHour = roomDto.PricePerHour,
+                Status = roomDto.Status
+            };
+            await _roomService.UpdateRoomAsync(updatedRoom);
+            return RedirectToAction("Index");
+        }
+        return View(room);
+    }
+
+    public async Task<IActionResult> Start(int id)
+    {
+        var room = await _roomService.GetRoomByIdAsync(id);
+        if (room == null)
+        {
+            return Json(new { success = false, message = "Phòng không tồn tại." });
+        }
+
+        // Cập nhật trạng thái phòng
+        room.Status = "Occupied";
+        await _roomService.UpdateRoomAsync(room);
+
+        return Json(new { success = true });
     }
     public IActionResult Privacy()
     {
