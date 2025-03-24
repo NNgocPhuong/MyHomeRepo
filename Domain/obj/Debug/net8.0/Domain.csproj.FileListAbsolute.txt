@@ -12,4 +12,3 @@ D:\HappyProject\MyHomeCleanArchitecture\Domain\obj\Debug\net8.0\Domain.pdb
 D:\HappyProject\MyHomeCleanArchitecture\Domain\obj\Debug\net8.0\ref\Domain.dll
 D:\HappyProject\MyHomeCleanArchitecture\Domain\bin\Debug\net8.0\Domain.runtimeconfig.json
 D:\HappyProject\MyHomeCleanArchitecture\Domain\obj\Debug\net8.0\Domain.genruntimeconfig.cache
-D:\HappyProject\MyHomeCleanArchitecture\Domain\obj\Debug\net8.0\Domain.csproj.AssemblyReference.cache

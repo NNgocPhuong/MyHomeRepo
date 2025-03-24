@@ -2,35 +2,6 @@
   "version": 3,
   "targets": {
     "net8.0": {
-      "AutoMapper/14.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.Options": "8.0.0"
-        },
-        "compile": {
-          "lib/net8.0/AutoMapper.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/AutoMapper.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "AutoMapper.Extensions.Microsoft.DependencyInjection/12.0.1": {
-        "type": "package",
-        "dependencies": {
-          "AutoMapper": "[12.0.1]",
-          "Microsoft.Extensions.Options": "6.0.0"
-        },
-        "compile": {
-          "lib/netstandard2.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
-        }
-      },
       "Humanizer.Core/2.14.1": {
         "type": "package",
         "compile": {
@@ -470,7 +441,7 @@
       "Microsoft.Extensions.DependencyInjection.Abstractions/8.0.2": {
         "type": "package",
         "compile": {
-          "lib/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+          "lib/net8.0/_._": {
             "related": ".xml"
           }
         },
@@ -546,7 +517,7 @@
           "Microsoft.Extensions.Primitives": "8.0.0"
         },
         "compile": {
-          "lib/net8.0/Microsoft.Extensions.Options.dll": {
+          "lib/net8.0/_._": {
             "related": ".xml"
           }
         },
@@ -562,7 +533,7 @@
       "Microsoft.Extensions.Primitives/8.0.0": {
         "type": "package",
         "compile": {
-          "lib/net8.0/Microsoft.Extensions.Primitives.dll": {
+          "lib/net8.0/_._": {
             "related": ".xml"
           }
         },
@@ -816,35 +787,6 @@
     }
   },
   "libraries": {
-    "AutoMapper/14.0.0": {
-      "sha512": "OC+1neAPM4oCCqQj3g2GJ2shziNNhOkxmNB9cVS8jtx4JbgmRzLcUOxB9Tsz6cVPHugdkHgCaCrTjjSI0Z5sCQ==",
-      "type": "package",
-      "path": "automapper/14.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "README.md",
-        "automapper.14.0.0.nupkg.sha512",
-        "automapper.nuspec",
-        "icon.png",
-        "lib/net8.0/AutoMapper.dll",
-        "lib/net8.0/AutoMapper.xml"
-      ]
-    },
-    "AutoMapper.Extensions.Microsoft.DependencyInjection/12.0.1": {
-      "sha512": "+g/K+Vpe3gGMKGzjslMOdqNlkikScDjWfVvmWTayrDHaG/n2pPmFBMa+jKX1r/h6BDGFdkyRjAuhFE3ykW+r1g==",
-      "type": "package",
-      "path": "automapper.extensions.microsoft.dependencyinjection/12.0.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "README.md",
-        "automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
-        "automapper.extensions.microsoft.dependencyinjection.nuspec",
-        "icon.png",
-        "lib/netstandard2.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll"
-      ]
-    },
     "Humanizer.Core/2.14.1": {
       "sha512": "lQKvtaTDOXnoVJ20ibTuSIOf2i0uO0MPbDhd1jm238I+U/2ZnRENj0cktKZhtchBMtCUSRQ5v4xBCUbKNmyVMw==",
       "type": "package",
@@ -2089,8 +2031,6 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "AutoMapper >= 14.0.0",
-      "AutoMapper.Extensions.Microsoft.DependencyInjection >= 12.0.1",
       "Microsoft.EntityFrameworkCore.Design >= 8.0.14"
     ]
   },
@@ -2147,14 +2087,6 @@
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
-          "AutoMapper": {
-            "target": "Package",
-            "version": "[14.0.0, )"
-          },
-          "AutoMapper.Extensions.Microsoft.DependencyInjection": {
-            "target": "Package",
-            "version": "[12.0.1, )"
-          },
           "Microsoft.EntityFrameworkCore.Design": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",
@@ -2181,17 +2113,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1608",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Detected package version outside of dependency constraint: AutoMapper.Extensions.Microsoft.DependencyInjection 12.0.1 requires AutoMapper (= 12.0.1) but version AutoMapper 14.0.0 was resolved.",
-      "libraryId": "AutoMapper",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    }
-  ]
+  }
 }

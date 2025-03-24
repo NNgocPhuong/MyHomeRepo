@@ -1,8 +1,6 @@
 using Application.IServices;
 using Application.Services;
 using Infrastructure;
-using Presentation.Mapping;
-using AutoMapper; // Add this using directive
 using System.Reflection; // Add this using directive
 
 var builder = WebApplication.CreateBuilder(args);
