@@ -4,42 +4,44 @@
     ViewData["Title"] = "Tạo phòng";
 }
 
-<h2>@ViewData["Title"]</h2>
-
-<form asp-action="Create" method="post">
-    <div class="form-group">
-        <label asp-for="Name" class="control-label"></label>
-        <input asp-for="Name" class="form-control" />
-        <span asp-validation-for="Name" class="text-danger"></span>
+<div class="container mt-4">
+    <div class="card shadow-lg p-4">
+        <h2 class="text-center text-primary">@ViewData["Title"]</h2>
+        <form asp-action="Create" method="post">
+            <div class="mb-3">
+                <label asp-for="Name" class="form-label fw-bold">Tên phòng</label>
+                <input asp-for="Name" class="form-control border-primary" placeholder="Nhập tên phòng" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="RoomType" class="form-label fw-bold">Loại phòng</label>
+                <input asp-for="RoomType" class="form-control border-primary" placeholder="Nhập loại phòng" />
+                <span asp-validation-for="RoomType" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="PricePerHour" class="form-label fw-bold">Giá thuê theo giờ</label>
+                <input asp-for="PricePerHour" type="number" class="form-control border-primary" placeholder="Nhập giá thuê" />
+                <span asp-validation-for="PricePerHour" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Status" class="form-label fw-bold">Trạng thái</label>
+                <select asp-for="Status" class="form-select border-primary">
+                    <option value="Available">Trống</option>
+                    <option value="Occupied">Đang sử dụng</option>
+                    <option value="Maintenance">Bảo trì</option>
+                </select>
+                <span asp-validation-for="Status" class="text-danger"></span>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary px-4">Tạo phòng</button>
+                <a asp-action="Index" class="btn btn-outline-secondary px-4">Quay lại</a>
+            </div>
+        </form>
     </div>
-    <div class="form-group">
-        <label asp-for="RoomType" class="control-label"></label>
-        <input asp-for="RoomType" class="form-control" />
-        <span asp-validation-for="RoomType" class="text-danger"></span>
-    </div>
-    <div class="form-group">
-        <label asp-for="PricePerHour" class="control-label"></label>
-        <input asp-for="PricePerHour" class="form-control" />
-        <span asp-validation-for="PricePerHour" class="text-danger"></span>
-    </div>
-    <div class="form-group">
-        <label asp-for="Status" class="control-label"></label>
-        <select asp-for="Status" class="form-control">
-            <option value="Available">Available</option>
-            <option value="Occupied">Occupied</option>
-            <option value="Maintenance">Maintenance</option>
-        </select>
-        <span asp-validation-for="Status" class="text-danger"></span>
-    </div>
-    <div class="form-group">
-        <input type="submit" value="Create" class="btn btn-primary" />
-    </div>
-</form>
-
-<div>
-    <a asp-action="Index">Back to List</a>
 </div>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }

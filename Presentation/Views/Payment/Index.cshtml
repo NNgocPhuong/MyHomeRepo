@@ -1,0 +1,101 @@
+﻿@{
+    ViewData["Title"] = "Hoá đơn";
+}
+@model IEnumerable<Products>
+
+<div class="container py-4">
+    <h2 class="mb-4 text-center text-primary">Hoá đơn thanh toán</h2>
+
+    <div class="card shadow-sm p-4 mb-4">
+        <h3 class="mb-3">Sản phẩm & Dịch vụ</h3>
+        <table class="table table-hover table-bordered text-center">
+            <thead class="table-dark">
+                <tr>
+                    <th>Tên sản phẩm</th>
+                    <th>Giá</th>
+                    <th>Số lượng</th>
+                    <th>Thao tác</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var product in Model)
+                {
+                    <tr>
+                        <td>@product.Name</td>
+                        <td>@product.Price VNĐ</td>
+                        <td>
+                            <input type="number" id="quantity_@product.Id" class="form-control text-center" value="0" min="0" style="width: 80px; display: inline-block;" />
+                        </td>
+                        <td>
+                            <button class="btn btn-outline-success btn-sm" onclick="changeQuantity(@product.Id, 1)">+</button>
+                            <button class="btn btn-outline-danger btn-sm" onclick="changeQuantity(@product.Id, -1)">-</button>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <div class="card shadow-sm p-4 mb-4">
+        <h3 class="mb-3">Nhân viên phục vụ</h3>
+        <table class="table table-hover table-bordered text-center">
+            <thead class="table-dark">
+                <tr>
+                    <th>Tên nhân viên</th>
+                    <th>Thời gian vào</th>
+                    <th>Thời gian ra</th>
+                    <th>Thao tác</th>
+                </tr>
+            </thead>
+            <tbody id="employeeList">
+            </tbody>
+        </table>
+        <button class="btn btn-primary mt-3" onclick="openEmployeeModal()">Thêm nhân viên phục vụ</button>
+    </div>
+
+    <button class="btn btn-success w-100 py-2 fs-5" onclick="exportInvoice()">Xuất Hoá Đơn</button>
+</div>
+
+<!-- Modal Thêm Nhân Viên -->
+<div class="modal fade" id="employeeModal" tabindex="-1" aria-labelledby="employeeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="employeeModalLabel">Thêm nhân viên phục vụ</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="mb-3">
+                    <label for="employeeSelect" class="form-label">Chọn nhân viên</label>
+                    <select id="employeeSelect" class="form-select">
+                        <option value="1">Nhân viên 1</option>
+                        <option value="2">Nhân viên 2</option>
+                        <option value="3">Nhân viên 3</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="startTime" class="form-label">Giờ bắt đầu</label>
+                    <input type="time" id="startTime" class="form-control" />
+                </div>
+                <button class="btn btn-success w-100" onclick="addEmployee()">Thêm</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function changeQuantity(productId, change) {
+        let input = document.getElementById("quantity_" + productId);
+        let currentValue = parseInt(input.value);
+        input.value = Math.max(0, currentValue + change);
+    }
+
+    function openEmployeeModal() {
+        let modal = new bootstrap.Modal(document.getElementById('employeeModal'));
+        modal.show();
+    }
+
+    function exportInvoice() {
+        alert("Hoá đơn đã được xuất!");
+    }
+</script>

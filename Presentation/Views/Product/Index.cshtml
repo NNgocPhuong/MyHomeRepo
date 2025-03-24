@@ -1,0 +1,91 @@
+﻿@model IEnumerable<Products>
+@{
+    ViewData["Title"] = "Danh mục sản phẩm";
+}
+
+<div class="container mt-4">
+    <h2 class="mb-3">Danh mục sản phẩm</h2>
+    <button class="btn btn-success mb-3" data-bs-toggle="modal" data-bs-target="#addProductModal">Tạo sản phẩm mới</button>
+    <table class="table table-striped table-hover">
+        <thead class="table-dark">
+            <tr>
+                <th>Tên sản phẩm</th>
+                <th>Giá</th>
+                <th>Hành động</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var product in Model)
+            {
+                <tr>
+                    <td>@product.Name</td>
+                    <td>@product.Price VNĐ</td>
+                    <td>
+                        <button class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#editProductModal" onclick="editProduct('@product.Id', '@product.Name', '@product.Price')">Chỉnh sửa</button>
+                        <a asp-action="DeleteProduct" asp-route-id="@product.Id" class="btn btn-danger btn-sm">Xóa</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<!-- Modal Thêm Sản Phẩm -->
+<div class="modal fade" id="addProductModal" tabindex="-1" aria-labelledby="addProductModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="addProductModalLabel">Thêm sản phẩm mới</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form method="post" asp-action="AddProduct">
+                    <div class="form-group mb-3">
+                        <label for="Name">Tên sản phẩm</label>
+                        <input type="text" class="form-control" id="Name" name="Name" required />
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="Price">Giá</label>
+                        <input type="number" class="form-control" id="Price" name="Price" required />
+                    </div>
+                    <input type="hidden" id="CategoryId" name="CategoryId" value="1" />
+                    <button type="submit" class="btn btn-primary">Thêm sản phẩm</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Chỉnh Sửa Sản Phẩm -->
+<div class="modal fade" id="editProductModal" tabindex="-1" aria-labelledby="editProductModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="editProductModalLabel">Chỉnh sửa sản phẩm</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form method="post" asp-action="EditProduct">
+                    <input type="hidden" id="editProductId" name="Id" />
+                    <div class="form-group mb-3">
+                        <label for="editProductName">Tên sản phẩm</label>
+                        <input type="text" class="form-control" id="editProductName" name="Name" required />
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="editProductPrice">Giá</label>
+                        <input type="number" class="form-control" id="editProductPrice" name="Price" required />
+                    </div>
+                    <button type="submit" class="btn btn-warning">Lưu thay đổi</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function editProduct(id, name, price) {
+        document.getElementById('editProductId').value = id;
+        document.getElementById('editProductName').value = name;
+        document.getElementById('editProductPrice').value = price;
+    }
+</script>

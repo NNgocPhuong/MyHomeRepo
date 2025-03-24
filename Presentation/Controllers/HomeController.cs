@@ -11,10 +11,12 @@ public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
     private readonly IRoomService _roomService;
-    public HomeController(ILogger<HomeController> logger, IRoomService roomService)
+    private readonly IRoomUsageHistoryService _roomUsageService;
+    public HomeController(ILogger<HomeController> logger, IRoomService roomService, IRoomUsageHistoryService roomUsageService)
     {
         _logger = logger;
         _roomService = roomService;
+        _roomUsageService = roomUsageService;
     }
 
     public async Task<IActionResult> Index()
@@ -112,6 +114,13 @@ public class HomeController : Controller
         {
             return Json(new { success = false, message = "Phòng không tồn tại." });
         }
+
+        await _roomUsageService.AddAsync(new Domain.Entities.RoomUsageHistory()
+        {
+            RoomId = room.Id,
+            StartTime = DateTime.Now,
+            TotalPrice = 50000
+        });
 
         // Cập nhật trạng thái phòng
         room.Status = "Occupied";

@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<Rooms>
 
 @{
-    ViewData["Title"] = "Home";
+    ViewData["Title"] = "Danh sách phòng";
 }
 <div class="container py-4">
     <h3 class="mb-4">Có <b>@Model.Count()</b> phòng</h3>
@@ -28,7 +28,7 @@
                         }
                         else if (item.Status == "Occupied")
                         {
-                            <a asp-controller="Home" asp-action="Pay" asp-route-id="@item.Id" class="btn btn-outline-success w-100">Thanh toán</a>
+                            <a asp-controller="Payment" asp-action="Index" asp-route-id="@item.Id" class="btn btn-outline-success w-100">Thanh toán</a>
                         }
                         <a asp-controller="Home" asp-action="Edit" asp-route-id="@item.Id" class="btn btn-outline-warning w-100 mt-2">Chỉnh sửa</a>
                     </div>
@@ -57,7 +57,7 @@
                     success: function (response) {
                         if (response.success) {
                             button.removeClass("btn-outline-primary").addClass("btn-outline-success").text("Thanh toán");
-                            button.attr("href", '@Url.Action("Pay", "Home")' + '/' + roomId);
+                            button.attr("href", '@Url.Action("Index", "Payment")');
                             button.removeClass("btn-start-room").addClass("btn-pay-room");
                         } else {
                             alert("Có lỗi xảy ra khi bật phòng.");

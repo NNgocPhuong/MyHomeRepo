@@ -8,26 +8,59 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/Presentation.styles.css" asp-append-version="true" />
     <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            padding-top: 70px; /* Để tránh header che mất nội dung */
+        }
+
         .navbar {
             background: linear-gradient(135deg, #6e8efb, #a777e3);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1030;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
+
         .navbar-brand, .nav-link {
             color: white !important;
             font-weight: bold;
         }
+
         .navbar-toggler {
             border-color: rgba(255, 255, 255, 0.5);
         }
-        .footer {
-            background-color: #f8f9fa;
-            padding: 15px 0;
-            text-align: center;
+
+        .content-wrapper {
+            flex: 1;
+            padding-bottom: 60px; /* Để footer không che nội dung */
         }
+
+        .footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+            .footer a {
+                color: #d4d4d4;
+                text-decoration: none;
+            }
+
+                .footer a:hover {
+                    color: white;
+                }
     </style>
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark shadow-sm">
+        <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Karaoke Phương Nam</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
@@ -40,20 +73,21 @@
                             <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Quản lý phòng</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Privacy">Quản lý sản phẩm</a>
+                            <a class="nav-link" asp-area="" asp-controller="Product" asp-action="Index">Quản lý sản phẩm</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <div class="container py-4">
-        <main role="main" class="pb-3">
+
+    <div class="container content-wrapper">
+        <main role="main" class="py-4">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="footer text-muted">
+    <footer class="footer">
         <div class="container">
             &copy; 2025 - Karaoke Phương Nam - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
