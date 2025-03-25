@@ -3,52 +3,104 @@
 @{
     ViewData["Title"] = "Danh sách phòng";
 }
-<div class="container py-4">
-    <h3 class="mb-4">Có <b>@Model.Count()</b> phòng</h3>
 
+<div class="container py-5">
+    <!-- Header Section -->
+    <div class="row mb-4 align-items-center">
+        <div class="col-md-8">
+            <h2 class="fw-bold text-primary mb-0">Danh sách phòng karaoke</h2>
+            <p class="text-muted">Quản lý và theo dõi trạng thái phòng</p>
+        </div>
+        <div class="col-md-4 text-md-end">
+            <div class="badge bg-info p-2 fs-6">
+                <i class="bi bi-door-open me-1"></i> Có <span class="fw-bold">@Model.Count()</span> phòng
+            </div>
+            <a asp-controller="Home" asp-action="Create" class="btn btn-success ms-2">
+                <i class="bi bi-plus-circle me-1"></i> Tạo phòng
+            </a>
+        </div>
+    </div>
+
+    <!-- Room Cards Section -->
     <div class="row g-4">
         @foreach (var item in Model)
         {
             <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                <div class="card shadow-sm border-0 rounded">
-                    <a asp-controller="Home" asp-action="Index" asp-route-id="@item.Id">
-                        <img src="~/img/karaokeImg.png" class="card-img-top" alt="Phòng hát">
-                    </a>
-                    <div class="card-body text-center">
-                        <a asp-controller="Home" asp-action="Detail" asp-route-id="@item.Id" class="text-decoration-none text-dark">
-                            <h5 class="card-title fw-bold">@item.Name</h5>
-                        </a>
-                        <p class="mb-1">Loại: <span class="fw-semibold">@item.RoomType</span></p>
-                        <p class="mb-1">Trạng thái: <span class="fw-semibold text-success">@(item.Status == "Available" ? "Có sẵn" : "Đang bận")</span></p>
-                        <p class="text-danger fw-bold">Giá thuê: @item.PricePerHour đồng</p>
-                        @if (item.Status == "Available")
-                        {
-                            <a href="#" class="btn btn-outline-primary w-100 btn-start-room" data-id="@item.Id">Bật phòng</a>
+                <div class="card h-100 shadow-sm border-0 rounded-3 room-card @(item.Status == "Available" ? "border-success" : "border-danger") border-opacity-25">
+                    <div class="position-relative">
+                        <img src="~/img/karaokeImg.png" class="card-img-top rounded-top-3" alt="Phòng hát">
+                        <div class="position-absolute top-0 end-0 m-2">
+                            <span class="badge @(item.Status == "Available" ? "bg-success" : "bg-danger") rounded-pill">
+                                @(item.Status == "Available" ? "Có sẵn" : "Đang bận")
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold mb-1">@item.Name</h5>
+                        <p class="text-muted small mb-2">Loại: @item.RoomType</p>
 
-                        }
-                        else if (item.Status == "Occupied")
-                        {
-                            <a asp-controller="Payment" asp-action="Index" asp-route-id="@item.Id" class="btn btn-outline-success w-100">Thanh toán</a>
-                        }
-                        <a asp-controller="Home" asp-action="Edit" asp-route-id="@item.Id" class="btn btn-outline-warning w-100 mt-2">Chỉnh sửa</a>
+                        <div class="d-flex justify-content-between align-items-center mt-2">
+                            <span class="text-danger fw-bold fs-5">@item.PricePerHour.ToString("N0")đ/giờ</span>
+                            <a asp-controller="Home" asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-outline-secondary">
+                                <i class="bi bi-pencil-square"></i>
+                            </a>
+                        </div>
+
+                        <div class="mt-auto pt-3 room-action-container">
+                            @if (item.Status == "Available")
+                            {
+                                <button class="btn btn-primary w-100 rounded-3 btn-start-room" data-id="@item.Id">
+                                    <i class="bi bi-power me-1"></i> Bật phòng
+                                </button>
+                            }
+                            else if (item.Status == "Occupied")
+                            {
+                                <a asp-controller="Payment" asp-action="Index" asp-route-id="@item.Id" class="btn btn-success w-100 rounded-3 btn-pay-room">
+                                    <i class="bi bi-cash-coin me-1"></i> Thanh toán
+                                </a>
+                            }
+                        </div>
                     </div>
                 </div>
             </div>
         }
     </div>
 
-    <div class="text-center mt-4">
-        <a asp-controller="Home" asp-action="Create" class="btn btn-success px-4 py-2">Tạo phòng</a>
-    </div>
+    <!-- No Rooms Message -->
+    @if (!Model.Any())
+    {
+        <div class="text-center py-5">
+            <div class="display-6 text-muted mb-3"><i class="bi bi-emoji-frown"></i></div>
+            <h4 class="text-secondary">Chưa có phòng nào</h4>
+            <p class="text-muted">Vui lòng thêm phòng mới để bắt đầu.</p>
+            <a asp-controller="Home" asp-action="Create" class="btn btn-primary mt-2">
+                <i class="bi bi-plus-circle me-1"></i> Tạo phòng mới
+            </a>
+        </div>
+    }
 </div>
+
 @section Scripts {
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         $(document).ready(function () {
-            $(".btn-start-room").click(function (e) {
+            // Hiệu ứng hover cho card
+            $(".room-card").hover(
+                function () { $(this).addClass("shadow"); },
+                function () { $(this).removeClass("shadow"); }
+            );
+
+            // Xử lý sự kiện click nút "Bật phòng"
+            $(document).on("click", ".btn-start-room", function (e) {
                 e.preventDefault();
                 var button = $(this);
+                var card = button.closest('.room-card');
                 var roomId = button.data("id");
+                var actionContainer = button.closest('.room-action-container');
+
+                // Hiệu ứng loading
+                button.html('<span class="spinner-border spinner-border-sm me-1" role="status" aria-hidden="true"></span> Đang xử lý...');
+                button.prop('disabled', true);
 
                 $.ajax({
                     url: '@Url.Action("Start", "Home")',
@@ -56,18 +108,74 @@
                     data: { id: roomId },
                     success: function (response) {
                         if (response.success) {
-                            button.removeClass("btn-outline-primary").addClass("btn-outline-success").text("Thanh toán");
-                            button.attr("href", '@Url.Action("Index", "Payment")');
-                            button.removeClass("btn-start-room").addClass("btn-pay-room");
+                            // Tạo đường dẫn đúng đến action Payment/Index với tham số id
+                            var paymentUrl = '@Url.Action("Index", "Payment")?id=' + roomId;
+
+                            // Thay thế hoàn toàn nút cũ bằng nút mới với url đúng
+                            var newPayButton = $('<a href="' + paymentUrl + '" class="btn btn-success w-100 rounded-3 btn-pay-room"><i class="bi bi-cash-coin me-1"></i> Thanh toán</a>');
+                            actionContainer.empty().append(newPayButton);
+
+                            // Cập nhật trạng thái
+                            card.find(".badge").removeClass("bg-success").addClass("bg-danger").text("Đang bận");
+                            card.removeClass("border-success").addClass("border-danger");
+
+                            // Hiển thị thông báo thành công nếu có toastr
+                            if (typeof toastr !== 'undefined') {
+                                toastr.success('Phòng đã được bật thành công!');
+                            }
                         } else {
+                            // Hiệu ứng lỗi
+                            button.removeClass("btn-primary").addClass("btn-danger")
+                                  .html('<i class="bi bi-exclamation-triangle me-1"></i> Thử lại');
+                            setTimeout(() => {
+                                button.removeClass("btn-danger").addClass("btn-primary")
+                                      .html('<i class="bi bi-power me-1"></i> Bật phòng');
+                                button.prop('disabled', false);
+                            }, 2000);
+
                             alert("Có lỗi xảy ra khi bật phòng.");
                         }
                     },
                     error: function () {
+                        button.removeClass("btn-primary").addClass("btn-danger")
+                              .html('<i class="bi bi-exclamation-triangle me-1"></i> Thử lại');
+                        setTimeout(() => {
+                            button.removeClass("btn-danger").addClass("btn-primary")
+                                  .html('<i class="bi bi-power me-1"></i> Bật phòng');
+                            button.prop('disabled', false);
+                        }, 2000);
+
                         alert("Có lỗi xảy ra khi gửi yêu cầu.");
                     }
                 });
             });
         });
     </script>
+}
+
+@section Styles {
+    <style>
+        .room-card {
+            transition: all 0.3s ease;
+            overflow: hidden;
+        }
+
+            .room-card .card-img-top {
+                height: 180px;
+                object-fit: cover;
+                transition: transform 0.5s ease;
+            }
+
+            .room-card:hover .card-img-top {
+                transform: scale(1.05);
+            }
+
+        .badge {
+            transition: all 0.3s ease;
+        }
+
+        .btn {
+            transition: all 0.2s ease;
+        }
+    </style>
 }

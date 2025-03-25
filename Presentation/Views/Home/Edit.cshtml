@@ -4,52 +4,121 @@
     ViewData["Title"] = "Chỉnh sửa phòng";
 }
 
-<div class="container mt-4">
-    <div class="card shadow-lg">
-        <div class="card-header bg-primary text-white">
-            <h4 class="mb-0">Chỉnh sửa phòng</h4>
-        </div>
-        <div class="card-body">
-            <form asp-action="Edit" method="post">
-                <input asp-for="Id" type="hidden" />
+<div class="container py-4">
+    <div class="row">
+        <div class="col-lg-8 mx-auto">
+            <!-- Breadcrumb -->
+            <nav aria-label="breadcrumb" class="mb-4">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index" class="text-decoration-none"><i class="bi bi-house-door"></i> Trang chủ</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Chỉnh sửa phòng</li>
+                </ol>
+            </nav>
 
-                <div class="mb-3">
-                    <label asp-for="Name" class="form-label fw-bold">Tên phòng</label>
-                    <input asp-for="Name" class="form-control" placeholder="Nhập tên phòng" />
-                    <span asp-validation-for="Name" class="text-danger"></span>
+            <!-- Heading -->
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h2 class="text-gradient mb-0">Chỉnh sửa <span class="text-muted fw-normal fs-5">@Model.Name</span></h2>
+                <a asp-controller="Home" asp-action="Index" class="btn btn-outline-primary">
+                    <i class="bi bi-grid"></i> Xem tất cả phòng
+                </a>
+            </div>
+
+            <!-- Edit Card -->
+            <div class="card border-0 shadow-lg rounded-4 overflow-hidden">
+                <div class="card-header d-flex align-items-center p-3" style="background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));">
+                    <div class="bg-white p-2 rounded-3 me-3">
+                        <img src="~/img/karaokeImg.png" alt="Room" style="width: 40px; height: 40px; object-fit: cover;">
+                    </div>
+                    <h4 class="text-white mb-0 fw-bold">@Model.Name</h4>
                 </div>
 
-                <div class="mb-3">
-                    <label asp-for="RoomType" class="form-label fw-bold">Loại phòng</label>
-                    <input asp-for="RoomType" class="form-control" placeholder="Nhập loại phòng" />
-                    <span asp-validation-for="RoomType" class="text-danger"></span>
-                </div>
+                <div class="card-body p-4">
+                    <form asp-action="Edit" method="post">
+                        <input asp-for="Id" type="hidden" />
 
-                <div class="mb-3">
-                    <label asp-for="PricePerHour" class="form-label fw-bold">Giá mỗi giờ</label>
-                    <input asp-for="PricePerHour" type="number" class="form-control" placeholder="Nhập giá" />
-                    <span asp-validation-for="PricePerHour" class="text-danger"></span>
-                </div>
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="form-floating mb-3">
+                                    <input asp-for="Name" class="form-control rounded-3" placeholder="Nhập tên phòng" />
+                                    <label asp-for="Name">Tên phòng</label>
+                                    <span asp-validation-for="Name" class="text-danger small"></span>
+                                </div>
+                            </div>
 
-                <div class="mb-3">
-                    <label asp-for="Status" class="form-label fw-bold">Trạng thái</label>
-                    <select asp-for="Status" class="form-select">
-                        <option value="Available">Có sẵn</option>
-                        <option value="Occupied">Đang sử dụng</option>
-                        <option value="Maintenance">Bảo trì</option>
-                    </select>
-                    <span asp-validation-for="Status" class="text-danger"></span>
-                </div>
+                            <div class="col-md-6">
+                                <div class="form-floating mb-3">
+                                    <input asp-for="RoomType" class="form-control rounded-3" placeholder="Nhập loại phòng" />
+                                    <label asp-for="RoomType">Loại phòng</label>
+                                    <span asp-validation-for="RoomType" class="text-danger small"></span>
+                                </div>
+                            </div>
 
-                <div class="d-flex justify-content-between">
-                    <a asp-action="Index" class="btn btn-secondary">
-                        <i class="bi bi-arrow-left"></i> Quay lại
-                    </a>
-                    <button type="submit" class="btn btn-success">
-                        <i class="bi bi-save"></i> Lưu thay đổi
-                    </button>
+                            <div class="col-md-6">
+                                <div class="form-floating mb-3">
+                                    <input asp-for="PricePerHour" type="number" class="form-control rounded-3" placeholder="Nhập giá" />
+                                    <label asp-for="PricePerHour">Giá mỗi giờ (VNĐ)</label>
+                                    <span asp-validation-for="PricePerHour" class="text-danger small"></span>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-floating mb-3">
+                                    <select asp-for="Status" class="form-select rounded-3">
+                                        <option value="Available">Có sẵn</option>
+                                        <option value="Occupied">Đang sử dụng</option>
+                                        <option value="Maintenance">Bảo trì</option>
+                                    </select>
+                                    <label asp-for="Status">Trạng thái</label>
+                                    <span asp-validation-for="Status" class="text-danger small"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="status-indicators my-4">
+                            <div class="d-flex align-items-center mb-2">
+                                <div class="status-dot available me-2"></div>
+                                <span>Có sẵn: Phòng trống và sẵn sàng sử dụng</span>
+                            </div>
+                            <div class="d-flex align-items-center mb-2">
+                                <div class="status-dot occupied me-2"></div>
+                                <span>Đang sử dụng: Phòng đang có khách</span>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <div class="status-dot maintenance me-2"></div>
+                                <span>Bảo trì: Phòng đang trong quá trình sửa chữa hoặc dọn dẹp</span>
+                            </div>
+                        </div>
+
+                        <div class="d-flex flex-column flex-sm-row gap-2 mt-4 justify-content-between">
+                            <a asp-controller="Home" asp-action="Index" class="btn btn-outline-secondary btn-lg rounded-3">
+                                <i class="bi bi-arrow-left"></i> Quay lại
+                            </a>
+                            <div>
+                                <button type="reset" class="btn btn-light btn-lg rounded-3 me-2">
+                                    <i class="bi bi-arrow-counterclockwise"></i> Đặt lại
+                                </button>
+                                <button type="submit" class="btn btn-success btn-lg rounded-3">
+                                    <i class="bi bi-save"></i> Lưu thay đổi
+                                </button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
-            </form>
+            </div>
+
+            <!-- Additional Info Card -->
+            <div class="card border-0 shadow mt-4 rounded-4">
+                <div class="card-body p-4">
+                    <h5 class="card-title fw-bold mb-3">
+                        <i class="bi bi-info-circle text-primary"></i> Thông tin hữu ích
+                    </h5>
+                    <ul class="mb-0">
+                        <li>Cài đặt trạng thái <strong>Có sẵn</strong> nếu phòng đã sẵn sàng cho khách.</li>
+                        <li>Khi phục vụ khách hàng, trạng thái sẽ tự động chuyển sang <strong>Đang sử dụng</strong>.</li>
+                        <li>Đặt trạng thái <strong>Bảo trì</strong> khi phòng cần sửa chữa hoặc dọn dẹp.</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -58,4 +127,67 @@
     @{
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }
+    <script>
+        $(document).ready(function() {
+            // Tạo hiệu ứng khi thay đổi trạng thái
+            $('#Status').on('change', function() {
+                const status = $(this).val();
+                let statusClass = '';
+
+                if (status === 'Available') statusClass = 'border-success';
+                else if (status === 'Occupied') statusClass = 'border-danger';
+                else if (status === 'Maintenance') statusClass = 'border-warning';
+
+                // Cập nhật viền card
+                $('.card').removeClass('border-success border-danger border-warning').addClass(statusClass);
+            });
+
+            // Kích hoạt sự kiện onload để đặt trạng thái ban đầu
+            $('#Status').trigger('change');
+        });
+    </script>
+}
+
+@section Styles {
+    <style>
+        .status-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+
+            .status-dot.available {
+                background-color: dodgerblue;
+            }
+
+            .status-dot.occupied {
+                background-color: red;
+            }
+
+            .status-dot.maintenance {
+                background-color: #ffc107;
+            }
+
+        .form-floating > .form-control,
+        .form-floating > .form-select {
+            height: calc(3.5rem + 2px);
+            line-height: 1.25;
+        }
+
+        .form-floating > label {
+            padding: 1rem 0.75rem;
+        }
+
+        .card {
+            transition: all 0.3s ease;
+        }
+
+        .btn {
+            transition: all 0.2s ease;
+        }
+
+        .rounded-4 {
+            border-radius: 0.75rem !important;
+        }
+    </style>
 }

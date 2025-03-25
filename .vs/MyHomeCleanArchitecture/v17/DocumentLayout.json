@@ -7,56 +7,24 @@
       "RelativeMoniker": "D:0:0:{DFF9AD95-1650-45B1-AD72-80D41CF3C9A7}|Presentation\\Presentation.csproj|solutionrelative:presentation\\views\\home\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DFF9AD95-1650-45B1-AD72-80D41CF3C9A7}|Presentation\\Presentation.csproj|d:\\happyproject\\myhomecleanarchitecture\\presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DFF9AD95-1650-45B1-AD72-80D41CF3C9A7}|Presentation\\Presentation.csproj|solutionrelative:presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DFF9AD95-1650-45B1-AD72-80D41CF3C9A7}|Presentation\\Presentation.csproj|d:\\happyproject\\myhomecleanarchitecture\\presentation\\views\\home\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DFF9AD95-1650-45B1-AD72-80D41CF3C9A7}|Presentation\\Presentation.csproj|solutionrelative:presentation\\views\\home\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DFF9AD95-1650-45B1-AD72-80D41CF3C9A7}|Presentation\\Presentation.csproj|d:\\happyproject\\myhomecleanarchitecture\\presentation\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DFF9AD95-1650-45B1-AD72-80D41CF3C9A7}|Presentation\\Presentation.csproj|solutionrelative:presentation\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DFF9AD95-1650-45B1-AD72-80D41CF3C9A7}|Presentation\\Presentation.csproj|d:\\happyproject\\myhomecleanarchitecture\\presentation\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DFF9AD95-1650-45B1-AD72-80D41CF3C9A7}|Presentation\\Presentation.csproj|solutionrelative:presentation\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DFF9AD95-1650-45B1-AD72-80D41CF3C9A7}|Presentation\\Presentation.csproj|d:\\happyproject\\myhomecleanarchitecture\\presentation\\views\\payment\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DFF9AD95-1650-45B1-AD72-80D41CF3C9A7}|Presentation\\Presentation.csproj|solutionrelative:presentation\\views\\payment\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DFF9AD95-1650-45B1-AD72-80D41CF3C9A7}|Presentation\\Presentation.csproj|d:\\happyproject\\myhomecleanarchitecture\\presentation\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DFF9AD95-1650-45B1-AD72-80D41CF3C9A7}|Presentation\\Presentation.csproj|solutionrelative:presentation\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DFF9AD95-1650-45B1-AD72-80D41CF3C9A7}|Presentation\\Presentation.csproj|d:\\happyproject\\myhomecleanarchitecture\\presentation\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DFF9AD95-1650-45B1-AD72-80D41CF3C9A7}|Presentation\\Presentation.csproj|solutionrelative:presentation\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DFF9AD95-1650-45B1-AD72-80D41CF3C9A7}|Presentation\\Presentation.csproj|d:\\happyproject\\myhomecleanarchitecture\\presentation\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{DFF9AD95-1650-45B1-AD72-80D41CF3C9A7}|Presentation\\Presentation.csproj|solutionrelative:presentation\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DFF9AD95-1650-45B1-AD72-80D41CF3C9A7}|Presentation\\Presentation.csproj|d:\\happyproject\\myhomecleanarchitecture\\presentation\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DFF9AD95-1650-45B1-AD72-80D41CF3C9A7}|Presentation\\Presentation.csproj|solutionrelative:presentation\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DFF9AD95-1650-45B1-AD72-80D41CF3C9A7}|Presentation\\Presentation.csproj|d:\\happyproject\\myhomecleanarchitecture\\presentation\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DFF9AD95-1650-45B1-AD72-80D41CF3C9A7}|Presentation\\Presentation.csproj|solutionrelative:presentation\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DFF9AD95-1650-45B1-AD72-80D41CF3C9A7}|Presentation\\Presentation.csproj|d:\\happyproject\\myhomecleanarchitecture\\presentation\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DFF9AD95-1650-45B1-AD72-80D41CF3C9A7}|Presentation\\Presentation.csproj|solutionrelative:presentation\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5993398-E9C0-41BD-B7E9-57CD17C72C33}|Domain\\Domain.csproj|d:\\happyproject\\myhomecleanarchitecture\\domain\\entities\\products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5993398-E9C0-41BD-B7E9-57CD17C72C33}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DFF9AD95-1650-45B1-AD72-80D41CF3C9A7}|Presentation\\Presentation.csproj|d:\\happyproject\\myhomecleanarchitecture\\presentation\\models\\products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DFF9AD95-1650-45B1-AD72-80D41CF3C9A7}|Presentation\\Presentation.csproj|solutionrelative:presentation\\models\\products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5993398-E9C0-41BD-B7E9-57CD17C72C33}|Domain\\Domain.csproj|d:\\happyproject\\myhomecleanarchitecture\\domain\\entities\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5993398-E9C0-41BD-B7E9-57CD17C72C33}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{09E43D65-381F-445A-9812-D157AE74C49E}|Application\\Application.csproj|d:\\happyproject\\myhomecleanarchitecture\\application\\services\\orderpaymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{09E43D65-381F-445A-9812-D157AE74C49E}|Application\\Application.csproj|solutionrelative:application\\services\\orderpaymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DFF9AD95-1650-45B1-AD72-80D41CF3C9A7}|Presentation\\Presentation.csproj|d:\\happyproject\\myhomecleanarchitecture\\presentation\\views\\payment\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DFF9AD95-1650-45B1-AD72-80D41CF3C9A7}|Presentation\\Presentation.csproj|solutionrelative:presentation\\views\\payment\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -66,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -90,27 +58,55 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\HappyProject\\MyHomeCleanArchitecture\\Presentation\\Views\\Product\\Index.cshtml",
-              "RelativeDocumentMoniker": "Presentation\\Views\\Product\\Index.cshtml",
-              "ToolTip": "D:\\HappyProject\\MyHomeCleanArchitecture\\Presentation\\Views\\Product\\Index.cshtml",
-              "RelativeToolTip": "Presentation\\Views\\Product\\Index.cshtml",
-              "ViewState": "AgIAAEoAAAAAAAAAAAAwwFoAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-24T04:49:58.947Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\HappyProject\\MyHomeCleanArchitecture\\Presentation\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Presentation\\Views\\Home\\Index.cshtml",
               "ToolTip": "D:\\HappyProject\\MyHomeCleanArchitecture\\Presentation\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "Presentation\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAACIAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAJ4AAAAAAAAAAAAAABQAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-19T07:34:17.323Z"
+              "WhenOpened": "2025-03-25T15:15:38.546Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "site.css",
+              "DocumentMoniker": "D:\\HappyProject\\MyHomeCleanArchitecture\\Presentation\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "Presentation\\wwwroot\\css\\site.css",
+              "ToolTip": "D:\\HappyProject\\MyHomeCleanArchitecture\\Presentation\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "Presentation\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-03-25T15:14:22.521Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\HappyProject\\MyHomeCleanArchitecture\\Presentation\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Presentation\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\HappyProject\\MyHomeCleanArchitecture\\Presentation\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Presentation\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAAAGQAAABhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-25T15:10:33.814Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\HappyProject\\MyHomeCleanArchitecture\\Presentation\\Views\\Product\\Index.cshtml",
+              "RelativeDocumentMoniker": "Presentation\\Views\\Product\\Index.cshtml",
+              "ToolTip": "D:\\HappyProject\\MyHomeCleanArchitecture\\Presentation\\Views\\Product\\Index.cshtml",
+              "RelativeToolTip": "Presentation\\Views\\Product\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-25T15:07:49.518Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -120,46 +116,9 @@
               "RelativeDocumentMoniker": "Presentation\\Views\\Payment\\Index.cshtml",
               "ToolTip": "D:\\HappyProject\\MyHomeCleanArchitecture\\Presentation\\Views\\Payment\\Index.cshtml",
               "RelativeToolTip": "Presentation\\Views\\Payment\\Index.cshtml",
-              "ViewState": "AgIAAFUAAAAAAAAAAAAwwGIAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGQAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-24T04:21:50.693Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "D:\\HappyProject\\MyHomeCleanArchitecture\\Presentation\\Views\\Home\\Create.cshtml",
-              "RelativeDocumentMoniker": "Presentation\\Views\\Home\\Create.cshtml",
-              "ToolTip": "D:\\HappyProject\\MyHomeCleanArchitecture\\Presentation\\Views\\Home\\Create.cshtml",
-              "RelativeToolTip": "Presentation\\Views\\Home\\Create.cshtml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAC8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-24T04:45:51.375Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\HappyProject\\MyHomeCleanArchitecture\\Presentation\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Presentation\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\HappyProject\\MyHomeCleanArchitecture\\Presentation\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Presentation\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAEkAAAAAAAAAAAAowGUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-24T14:52:38.4Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\HappyProject\\MyHomeCleanArchitecture\\Presentation\\Program.cs",
-              "RelativeDocumentMoniker": "Presentation\\Program.cs",
-              "ToolTip": "D:\\HappyProject\\MyHomeCleanArchitecture\\Presentation\\Program.cs",
-              "RelativeToolTip": "Presentation\\Program.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAMAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-14T11:18:12.39Z",
+              "WhenOpened": "2025-03-25T15:07:46.634Z",
               "EditorCaption": ""
             },
             {
@@ -170,94 +129,10 @@
               "RelativeDocumentMoniker": "Presentation\\Views\\Home\\Edit.cshtml",
               "ToolTip": "D:\\HappyProject\\MyHomeCleanArchitecture\\Presentation\\Views\\Home\\Edit.cshtml",
               "RelativeToolTip": "Presentation\\Views\\Home\\Edit.cshtml",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAowD0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-24T15:00:52.769Z",
+              "WhenOpened": "2025-03-25T15:07:32.438Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "PaymentController.cs",
-              "DocumentMoniker": "D:\\HappyProject\\MyHomeCleanArchitecture\\Presentation\\Controllers\\PaymentController.cs",
-              "RelativeDocumentMoniker": "Presentation\\Controllers\\PaymentController.cs",
-              "ToolTip": "D:\\HappyProject\\MyHomeCleanArchitecture\\Presentation\\Controllers\\PaymentController.cs",
-              "RelativeToolTip": "Presentation\\Controllers\\PaymentController.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAADwvx4AAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T04:17:26.672Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "D:\\HappyProject\\MyHomeCleanArchitecture\\Presentation\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Presentation\\Controllers\\HomeController.cs",
-              "ToolTip": "D:\\HappyProject\\MyHomeCleanArchitecture\\Presentation\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Presentation\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAgwHkAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T07:20:56.938Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ProductController.cs",
-              "DocumentMoniker": "D:\\HappyProject\\MyHomeCleanArchitecture\\Presentation\\Controllers\\ProductController.cs",
-              "RelativeDocumentMoniker": "Presentation\\Controllers\\ProductController.cs",
-              "ToolTip": "D:\\HappyProject\\MyHomeCleanArchitecture\\Presentation\\Controllers\\ProductController.cs",
-              "RelativeToolTip": "Presentation\\Controllers\\ProductController.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAowB8AAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T04:48:25.788Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Products.cs",
-              "DocumentMoniker": "D:\\HappyProject\\MyHomeCleanArchitecture\\Domain\\Entities\\Products.cs",
-              "RelativeDocumentMoniker": "Domain\\Entities\\Products.cs",
-              "ToolTip": "D:\\HappyProject\\MyHomeCleanArchitecture\\Domain\\Entities\\Products.cs",
-              "RelativeToolTip": "Domain\\Entities\\Products.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAQwBMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T15:01:46.113Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Products.cs",
-              "DocumentMoniker": "D:\\HappyProject\\MyHomeCleanArchitecture\\Presentation\\Models\\Products.cs",
-              "RelativeDocumentMoniker": "Presentation\\Models\\Products.cs",
-              "ToolTip": "D:\\HappyProject\\MyHomeCleanArchitecture\\Presentation\\Models\\Products.cs",
-              "RelativeToolTip": "Presentation\\Models\\Products.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T04:42:48.378Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "OrderPaymentService.cs",
-              "DocumentMoniker": "D:\\HappyProject\\MyHomeCleanArchitecture\\Application\\Services\\OrderPaymentService.cs",
-              "RelativeDocumentMoniker": "Application\\Services\\OrderPaymentService.cs",
-              "ToolTip": "D:\\HappyProject\\MyHomeCleanArchitecture\\Application\\Services\\OrderPaymentService.cs",
-              "RelativeToolTip": "Application\\Services\\OrderPaymentService.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T04:35:13.297Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Room.cs",
-              "DocumentMoniker": "D:\\HappyProject\\MyHomeCleanArchitecture\\Domain\\Entities\\Room.cs",
-              "RelativeDocumentMoniker": "Domain\\Entities\\Room.cs",
-              "ToolTip": "D:\\HappyProject\\MyHomeCleanArchitecture\\Domain\\Entities\\Room.cs",
-              "RelativeToolTip": "Domain\\Entities\\Room.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-14T10:26:42.196Z"
             }
           ]
         }
